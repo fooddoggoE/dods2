@@ -1,0 +1,93 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	events = 
+	[
+		{
+			type = "unspecified"
+			name = ""
+			start_time = 0.0
+		},
+	]
+	actors = 
+	[
+		{
+			name = "Idle_Anim"
+			channels = 
+			[
+				{
+					name = "Audio"
+					events = 
+					[
+						{
+							type = "speak"
+							name = "us_attack"
+							start_time = 0.0
+							end_time = 2.579773
+							param = "us_attack"
+							param2 = "80dB"
+							cctype = "cc_master"
+							eventID = 1
+						},
+					]
+				},
+				{
+					name = "Move"
+				},
+				{
+					name = "FaceTo"
+				},
+				{
+					name = "LookAt"
+					events = 
+					[
+						{
+							type = "lookat"
+							name = "Look at !player"
+							start_time = 0.0
+							param = "!player"
+							eventID = 2
+						},
+					]
+				},
+				{
+					name = "Postures"
+				},
+				{
+					name = "Gestures"
+				},
+				{
+					name = "Triggers"
+				},
+				{
+					name = "IKLocks"
+				},
+			]
+		},
+	]
+	scalesettings = 
+	[
+		{
+			tool = "CChoreoView"
+			scale = 100
+		},
+		{
+			tool = "FlexAnimationTool"
+			scale = 100
+		},
+		{
+			tool = "GestureTool"
+			scale = 100
+		},
+		{
+			tool = "RampTool"
+			scale = 100
+		},
+		{
+			tool = "SceneRampTool"
+			scale = 100
+		},
+	]
+	fps = 30
+	snap = true
+	ignorePhonemes = false
+}

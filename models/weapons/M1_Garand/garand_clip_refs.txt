@@ -1,0 +1,4 @@
+importfilelist
+{
+	"file"	"materials\models\shells\garand_clip.vmt"
+}
