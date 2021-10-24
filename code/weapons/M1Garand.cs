@@ -13,6 +13,9 @@ partial class Garand : BaseDmWeapon
 	public override float ReloadTime => 1.6f;
 	public override int Bucket => 2;
 
+    [Net]
+    public bool Aiming {get; set;}
+
 	public override void Spawn()
 	{
 		base.Spawn();
@@ -94,6 +97,14 @@ partial class Garand : BaseDmWeapon
         {
             ViewModelEntity?.SetAnimBool("empty", true);
         }
+
+		if (Input.Pressed(InputButton.Attack2)) 
+		{
+			Aiming = !Aiming;
+		}
+
+		(Owner as AnimEntity).SetAnimBool("b_aim", Aiming);
+
 	}
 
 	public override void AttackSecondary()
