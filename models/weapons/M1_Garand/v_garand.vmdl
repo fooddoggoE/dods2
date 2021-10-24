@@ -1051,7 +1051,7 @@
 								event_frame = 0
 								event_keys = 
 								{
-									name = "Weapon_Garand.ClipDing"
+									name = "garand_clipding"
 									stop_on_seq_change = false
 									use_layer_sequence = false
 									tags = ""
@@ -1106,7 +1106,7 @@
 								event_frame = 1
 								event_keys = 
 								{
-									name = "Weapon_Garand.Draw"
+									name = "draw_grenade"
 									stop_on_seq_change = false
 									use_layer_sequence = false
 									tags = ""
@@ -1118,7 +1118,7 @@
 								event_frame = 12
 								event_keys = 
 								{
-									name = "Weapon_Garand.ClipIn1"
+									name = "garand_clipin1"
 									stop_on_seq_change = false
 									use_layer_sequence = false
 									tags = ""
@@ -1130,7 +1130,7 @@
 								event_frame = 17
 								event_keys = 
 								{
-									name = "Weapon_Garand.ClipIn2"
+									name = "garand_clipin2"
 									stop_on_seq_change = false
 									use_layer_sequence = false
 									tags = ""
@@ -1142,7 +1142,7 @@
 								event_frame = 28
 								event_keys = 
 								{
-									name = "Weapon_Garand.Draw"
+									name = "draw_rifle"
 									stop_on_seq_change = false
 									use_layer_sequence = false
 									tags = ""
@@ -1154,7 +1154,7 @@
 								event_frame = 33
 								event_keys = 
 								{
-									name = "Weapon_Garand.BoltForward"
+									name = "garand_boltforward"
 									stop_on_seq_change = false
 									use_layer_sequence = false
 									tags = ""
@@ -1190,8 +1190,8 @@
 								event_frame = 1
 								event_keys = 
 								{
-									name = "Weapon_Garand.Draw"
-									stop_on_seq_change = false
+									name = "draw_rifle"
+									stop_on_seq_change = true
 									use_layer_sequence = false
 									tags = ""
 								}
@@ -1247,8 +1247,8 @@
 								event_frame = 1
 								event_keys = 
 								{
-									name = "Weapon_Garand.Draw"
-									stop_on_seq_change = false
+									name = "draw_rifle"
+									stop_on_seq_change = true
 									use_layer_sequence = false
 									tags = ""
 								}

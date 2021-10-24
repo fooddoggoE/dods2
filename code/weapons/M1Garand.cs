@@ -7,7 +7,7 @@ partial class Garand : BaseDmWeapon
 { 
 	public override string ViewModelPath => "models/weapons/m1_garand/v_garand.vmdl";
 
-	public override float PrimaryRate => 15.0f;
+	public override float PrimaryRate => 7.0f;
 	public override float SecondaryRate => 1.0f;
 	public override int ClipSize => 10;
 	public override float ReloadTime => 1.6f;
@@ -55,7 +55,7 @@ partial class Garand : BaseDmWeapon
 		// Tell the clients to play the shoot effects
 		//
 		ShootEffects();
-		PlaySound( "rust_smg.shoot" );
+		PlaySound( "garand_shoot" );
 
 		//
 		// Shoot the bullets
@@ -63,6 +63,27 @@ partial class Garand : BaseDmWeapon
 		Rand.SetSeed(Time.Tick);
 		ShootBullet( 0.1f, 1.5f, 5.0f, 3.0f );
 
+	}
+
+	public override void Simulate( Client owner ) 
+	{
+		if ( TimeSinceDeployed < 0.6f )
+			return;
+
+		if ( !IsReloading )
+		{
+			base.Simulate( owner );
+		}
+
+		if ( IsReloading && TimeSinceReload > ReloadTime )
+		{
+			OnReloadFinish();
+		}
+
+        if (AmmoClip == 0) 
+        {
+            ViewModelEntity?.SetAnimBool("empty", true);
+        }
 	}
 
 	public override void AttackSecondary()
