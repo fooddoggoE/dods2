@@ -1,8 +1,8 @@
 ﻿inventorybar
 {
 	position: absolute;
-	left: 200px;
-	top: 80px;
+	left: 0px;
+	top: 1000px;
 	font-family: Roboto;
 	opacity: 0;
 	transition: all 0.2s ease-out;
@@ -10,7 +10,7 @@
 
 	&.active
 	{
-		top: 100px;
+		top: 850px;
 		transition: all 0.1s ease-out;
 		opacity: 1;
 	}
@@ -21,8 +21,8 @@ inventorycolumn
 	margin-right: 5px;
 	mix-blend-mode: lighten;
 	color: #fc0;
-	flex-direction: column;
-	align-items: flex-start; // align to the left, don't stretch
+	flex-direction: row-reverse;
+	align-items: flex-end; // align to the left, don't stretch
 
 	.slot-number
 	{

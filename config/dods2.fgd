@@ -22,49 +22,9 @@
 ]
 
 //
-// Crossbow
-//
-@PointClass base(BaseProperties_dods2) editormodel( "weapons/rust_crossbow/rust_crossbow.vmdl" ) = dm_crossbow : ""
-[
-	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
-
-	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
-]
-
-//
 // Garand
 //
-@PointClass base(BaseProperties_dods2) editormodel( "weapons/M1_Garand/v_garand.vmdl" ) = dod_garand : ""
-[
-	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
-
-	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
-]
-
-//
-// Pistol
-//
-@PointClass base(BaseProperties_dods2) editormodel( "weapons/rust_pistol/rust_pistol.vmdl" ) = dm_pistol : ""
-[
-	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
-
-	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
-]
-
-//
-// Shotgun
-//
-@PointClass base(BaseProperties_dods2) editormodel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" ) = dm_shotgun : ""
-[
-	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
-
-	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
-]
-
-//
-// SMG
-//
-@PointClass base(BaseProperties_dods2) editormodel( "weapons/rust_smg/rust_smg.vmdl" ) = dm_smg : ""
+@PointClass base(BaseProperties_dods2) editormodel( "weapons/m1_garand/v_garand.vmdl" ) = dod_garand : ""
 [
 	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
 

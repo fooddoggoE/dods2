@@ -1,0 +1,4 @@
+importfilelist
+{
+	"file"	"materials\models\weapons\w_models\garand\w_garand.vmt"
+}

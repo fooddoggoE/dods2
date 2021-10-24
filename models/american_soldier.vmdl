@@ -17362,6 +17362,28 @@
 						master_morph_weight = 1.0
 						morph_weights = [  ]
 					},
+					{
+						_class = "WeightList"
+						name = "All_But_Eyes"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "Bip01_Pelvis"
+								weight = 1.0
+							},
+							{
+								bone = "ValveBiped_Eye_L"
+								weight = 0.0
+							},
+							{
+								bone = "ValveBiped_Eye_R"
+								weight = 0.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
 				]
 			},
 			{

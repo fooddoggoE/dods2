@@ -2,7 +2,7 @@ using Sandbox;
 using System;
 
 [Library( "dod_garand", Title = "M1 Garand" )]
-[Hammer.EditorModel( "weapons/M1_Garand/v_garand.vmdl" )]
+[Hammer.EditorModel( "weapons/m1_garand/v_garand.vmdl" )]
 partial class Garand : BaseDmWeapon
 { 
 	public override string ViewModelPath => "models/weapons/m1_garand/v_garand.vmdl";
@@ -17,7 +17,7 @@ partial class Garand : BaseDmWeapon
 	{
 		base.Spawn();
 
-		SetModel( "weapons/rust_smg/rust_smg.vmdl" );
+		SetModel( "models/weapons/m1_garand/w_garand.vmdl" );
 		AmmoClip = 10;
 	}
 
@@ -64,6 +64,16 @@ partial class Garand : BaseDmWeapon
 		ShootBullet( 0.1f, 1.5f, 5.0f, 3.0f );
 
 	}
+
+    public override bool CanReload() 
+    {
+        if (AmmoClip == 0 && Input.Pressed(InputButton.Reload)) 
+        {
+            return true;
+        }
+
+        return false;
+    }
 
 	public override void Simulate( Client owner ) 
 	{
