@@ -17414,7 +17414,7 @@
 						child_body = "Bip01_Spine"
 						anchor_origin = [ 0.000013, 3.345104, -2.981891 ]
 						anchor_angles = [ 85.055779, -89.999504, -179.999481 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.2
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17429,7 +17429,7 @@
 						child_body = "Bip01_Spine2"
 						anchor_origin = [ 7.535332, -0.102862, 0.00002 ]
 						anchor_angles = [ 0.000003, -85.926872, -89.999977 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.2
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17444,7 +17444,7 @@
 						child_body = "Bip01_Neck1"
 						anchor_origin = [ 12.187744, 0.638007, 0.000023 ]
 						anchor_angles = [ 0.000134, 124.066826, 90.0 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.2
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17459,7 +17459,7 @@
 						child_body = "Bip01_Head1"
 						anchor_origin = [ 3.593777, 0.000084, 0.000035 ]
 						anchor_angles = [ -0.000003, -66.70343, -89.999962 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.2
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17474,7 +17474,7 @@
 						child_body = "Bip01_L_Clavicle"
 						anchor_origin = [ 10.744713, 1.374238, 1.937682 ]
 						anchor_angles = [ 16.282408, -178.717133, 0.432402 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 10.0
@@ -17489,7 +17489,7 @@
 						child_body = "Bip01_L_UpperArm"
 						anchor_origin = [ 6.028135, -0.000088, 0.000031 ]
 						anchor_angles = [ -86.692543, -21.006891, 171.293915 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17504,7 +17504,7 @@
 						child_body = "Bip01_L_Forearm"
 						anchor_origin = [ 11.692585, -0.000021, -0.000053 ]
 						anchor_angles = [ 0.000123, -94.461609, -90.000015 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17519,7 +17519,7 @@
 						child_body = "Bip01_L_Hand"
 						anchor_origin = [ 11.481693, -0.000103, -0.000092 ]
 						anchor_angles = [ -0.113662, -85.121704, -83.891075 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17534,7 +17534,7 @@
 						child_body = "Bip01_R_Clavicle"
 						anchor_origin = [ 10.744671, 1.374259, -1.937594 ]
 						anchor_angles = [ 16.208055, 5.568828, 1.63209 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 10.0
@@ -17549,7 +17549,7 @@
 						child_body = "Bip01_R_UpperArm"
 						anchor_origin = [ 6.028152, -0.000084, -0.000049 ]
 						anchor_angles = [ 85.745537, 43.46471, 73.288635 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17564,7 +17564,7 @@
 						child_body = "Bip01_R_Forearm"
 						anchor_origin = [ 11.692589, -0.000006, 0.000065 ]
 						anchor_angles = [ -0.000258, -94.460075, -89.999992 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17579,7 +17579,7 @@
 						child_body = "Bip01_R_Hand"
 						anchor_origin = [ 11.481705, 0.00006, 0.000057 ]
 						anchor_angles = [ 0.58291, -85.171158, -96.08947 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17594,7 +17594,7 @@
 						child_body = "Bip01_L_Thigh"
 						anchor_origin = [ 3.890442, -0.000031, -0.000008 ]
 						anchor_angles = [ 86.109863, 96.118866, -0.000858 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17609,7 +17609,7 @@
 						child_body = "Bip01_L_Calf"
 						anchor_origin = [ 17.84819, -0.000026, -0.000002 ]
 						anchor_angles = [ -0.000094, -90.0, -90.0 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.15
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17624,7 +17624,7 @@
 						child_body = "Bip01_L_Foot"
 						anchor_origin = [ 16.525257, -0.000026, -0.000002 ]
 						anchor_angles = [ -8.566092, -150.035004, -76.681976 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 15.0
@@ -17639,7 +17639,7 @@
 						child_body = "Bip01_R_Thigh"
 						anchor_origin = [ -3.890457, -0.000015, -0.000003 ]
 						anchor_angles = [ 86.109871, 83.880112, 0.000005 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17654,7 +17654,7 @@
 						child_body = "Bip01_R_Calf"
 						anchor_origin = [ 17.848154, -0.000044, 0.000002 ]
 						anchor_angles = [ 0.000008, -90.0, -90.000015 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.15
 						enable_swing_limit = true
 						swing_limit = 30.0
@@ -17669,7 +17669,7 @@
 						child_body = "Bip01_R_Foot"
 						anchor_origin = [ 16.525229, -0.000043, 0.000007 ]
 						anchor_angles = [ 9.1443, -150.173141, -103.339165 ]
-						collision_enabled = false
+						collision_enabled = true
 						friction = 0.1
 						enable_swing_limit = true
 						swing_limit = 15.0
@@ -17687,7 +17687,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Pelvis"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 1.945225
 						point0 = [ 3.890442, 0.0, 0.0 ]
@@ -17696,7 +17696,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Spine"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 1.004576
 						point0 = [ 4.018303, 0.0, 0.0 ]
@@ -17705,7 +17705,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Spine2"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 2.235653
 						point0 = [ 8.942612, 0.0, 0.0 ]
@@ -17714,7 +17714,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Neck1"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 0.898444
 						point0 = [ 3.593777, 0.0, 0.0 ]
@@ -17723,7 +17723,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Head1"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 0.912537
 						point0 = [ 3.650146, 0.0, 0.0 ]
@@ -17732,7 +17732,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Clavicle"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 1.507035
 						point0 = [ 6.028139, 0.0, 0.0 ]
@@ -17741,7 +17741,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_UpperArm"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 2.923146
 						point0 = [ 11.692585, 0.0, 0.0 ]
@@ -17750,7 +17750,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Forearm"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 2.870423
 						point0 = [ 11.481693, 0.0, 0.0 ]
@@ -17759,7 +17759,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Hand"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 0.956362
 						point0 = [ 3.825447, 0.0, 0.0 ]
@@ -17768,7 +17768,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Clavicle"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 1.50704
 						point0 = [ 6.028159, 0.0, 0.0 ]
@@ -17777,7 +17777,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_UpperArm"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 2.923148
 						point0 = [ 11.692593, 0.0, 0.0 ]
@@ -17786,7 +17786,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Forearm"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 2.870427
 						point0 = [ 11.481709, 0.0, 0.0 ]
@@ -17795,7 +17795,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Hand"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 0.985576
 						point0 = [ 3.942303, 0.0, 0.0 ]
@@ -17804,7 +17804,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Thigh"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 4.462047
 						point0 = [ 17.848186, 0.0, 0.0 ]
@@ -17813,7 +17813,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Calf"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 4.131314
 						point0 = [ 16.525257, 0.0, 0.0 ]
@@ -17822,7 +17822,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Foot"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 1.719863
 						point0 = [ 6.879453, 0.0, 0.0 ]
@@ -17831,7 +17831,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Thigh"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 4.46204
 						point0 = [ 17.848162, 0.0, 0.0 ]
@@ -17840,7 +17840,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Calf"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 4.131309
 						point0 = [ 16.525236, 0.0, 0.0 ]
@@ -17849,7 +17849,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Foot"
-						surface_prop = "default"
+						surface_prop = "flesh"
 						collision_prop = "default"
 						radius = 1.71986
 						point0 = [ 6.87944, 0.0, 0.0 ]

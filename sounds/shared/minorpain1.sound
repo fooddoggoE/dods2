@@ -1,0 +1,27 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		sounds = 
+		[
+			"sounds/shared/minorpain1.vsnd",
+			"sounds/shared/minorpain2.vsnd",
+			"sounds/shared/minorpain3.vsnd",
+			"sounds/shared/minorpain4.vsnd",
+			"sounds/shared/minorpain5.vsnd",
+			"sounds/shared/minorpain6.vsnd",
+			"sounds/shared/minorpain7.vsnd",
+			"sounds/shared/minorpain8.vsnd",
+			"sounds/shared/minorpain9.vsnd",
+			"sounds/shared/minorpain10.vsnd",
+			"sounds/shared/minorpain11.vsnd",
+			"sounds/shared/minorpain12.vsnd",
+		]
+		UI = false
+		Volume = 1.0
+		VolumeRandom = 0.0
+		Pitch = 1.0
+		PitchRandom = 0.0
+		DistanceMax = 1000.0
+	}
+}

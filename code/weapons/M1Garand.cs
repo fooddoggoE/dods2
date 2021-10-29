@@ -64,7 +64,7 @@ partial class Garand : BaseDmWeapon
 		// Shoot the bullets
 		//
 		Rand.SetSeed(Time.Tick);
-		ShootBullet( 0.1f, 1.5f, 5.0f, 3.0f );
+		ShootBullet( 0.1f, 1.5f, 15.0f, 3.0f );
 
 	}
 
@@ -75,7 +75,12 @@ partial class Garand : BaseDmWeapon
             return true;
         }
 
-        return false;
+		if (AmmoClip != 0 && Input.Pressed(InputButton.Reload)) 
+		{
+			Log.Info($"lmao, {Client} is a dumb dumb, tried to reload with more than 0 ammo in his clip, he still has {AmmoClip} bullet(s) left!!!");
+		}
+
+		return false;
     }
 
 	public override void Simulate( Client owner ) 
@@ -105,6 +110,10 @@ partial class Garand : BaseDmWeapon
 
 		(Owner as AnimEntity).SetAnimBool("b_aim", Aiming);
 
+		if (AmmoClip == 0 && Input.Pressed(InputButton.Attack1)) 
+		{
+			PlaySound("weaponempty");
+		}
 	}
 
 	public override void AttackSecondary()
@@ -117,8 +126,8 @@ partial class Garand : BaseDmWeapon
 	{
 		Host.AssertClient();
 
-		Particles.Create( "particles/pistol_muzzleflash.vpcf", EffectEntity, "muzzle" );
-		Particles.Create( "particles/pistol_ejectbrass.vpcf", EffectEntity, "ejection_point" );
+		Particles.Create( "particles/muzzleflash.vpcf", EffectEntity, "muzzle" );
+		Particles.Create( "particles/large_bullet_casing.vpcf", EffectEntity, "ejection_point" );
 
 		if ( Owner == Local.Pawn )
 		{
@@ -130,7 +139,7 @@ partial class Garand : BaseDmWeapon
 
 	public override void SimulateAnimator( PawnAnimator anim )
 	{
-		anim.SetParam( "holdtype", 2 ); // TODO this is shit
+		anim.SetParam( "holdtype", 1 ); // TODO this is shit
 		anim.SetParam( "aimat_weight", 1.0f );
 	}
 
