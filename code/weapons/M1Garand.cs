@@ -2,7 +2,7 @@ using Sandbox;
 using System;
 
 [Library( "dod_garand", Title = "M1 Garand" )]
-[Hammer.EditorModel( "weapons/m1_garand/v_garand.vmdl" )]
+[Hammer.EditorModel( "weapons/m1_garand/w_garand.vmdl" )]
 partial class Garand : BaseDmWeapon
 { 
 	public override string ViewModelPath => "models/weapons/m1_garand/v_garand.vmdl";

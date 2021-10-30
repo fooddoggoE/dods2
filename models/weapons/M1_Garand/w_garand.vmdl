@@ -35,9 +35,9 @@
 				[
 					{
 						_class = "Bone"
-						name = "weapon_bone_left"
-						origin = [ 0.0, 0.0, 0.0 ]
-						angles = [ -0.0, 0.0, 89.999985 ]
+						name = "Bip01_L_Hand"
+						origin = [ 24.348713, 0.0, 3.107248 ]
+						angles = [ 90.0, 180.0, 0.0 ]
 						do_not_discard = true
 					},
 				]
@@ -84,7 +84,7 @@
 						_class = "PhysicsHullFile"
 						name = "w_garand_physbox_0_mesh"
 						parent_bone = ""
-						surface_prop = "default"
+						surface_prop = "metal.weapon"
 						collision_prop = "default"
 						recenter_on_parent_bone = true
 						offset_origin = [ 0.0, 0.0, 0.0 ]
@@ -115,7 +115,7 @@
 				[
 					{
 						_class = "Attachment"
-						name = "muzzle_flash"
+						name = "muzzle"
 						parent_bone = "weapon_bone_left"
 						relative_origin = [ 1.0, 4.2, 36.5 ]
 						relative_angles = [ -90.0, -90.0, 0.0 ]
@@ -124,7 +124,7 @@
 					},
 					{
 						_class = "Attachment"
-						name = "shell_eject"
+						name = "ejection_point"
 						parent_bone = "weapon_bone_left"
 						relative_origin = [ 1.0, 4.5, 10.0 ]
 						relative_angles = [ -0.0, 180.0, -180.0 ]
