@@ -17916,19 +17916,19 @@
 							[
 								{
 									name = "Bip01_Spine2"
-									weight = 0.0
+									weight = 1.0
 								},
 								{
 									name = "Bip01_Spine1"
-									weight = 0.0
+									weight = 0.7
 								},
 								{
 									name = "Bip01_Spine"
-									weight = 0.0
+									weight = 0.45
 								},
 								{
 									name = "Bip01_Pelvis"
-									weight = 0.0
+									weight = 0.2
 								},
 							]
 						}
@@ -18134,6 +18134,21 @@
 								hitbox_maxs = [ 5.0, 0.35, 1.45 ]
 							},
 						]
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "forward_reference"
+						parent_bone = "Bip01_Head1"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 180.0, 90.0, 90.0 ]
+						weight = 1.0
+						ignore_rotation = false
 					},
 				]
 			},
