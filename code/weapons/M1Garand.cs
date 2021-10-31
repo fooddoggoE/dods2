@@ -98,6 +98,11 @@ partial class Garand : BaseDmWeapon
 			OnReloadFinish();
 		}
 
+		if (Aiming) 
+		{
+			ViewModelEntity?.SetAnimBool("aiming", true);
+		}
+
         if (AmmoClip == 0) 
         {
             ViewModelEntity?.SetAnimBool("empty", true);
@@ -113,6 +118,25 @@ partial class Garand : BaseDmWeapon
 		if (AmmoClip == 0 && Input.Pressed(InputButton.Attack1)) 
 		{
 			PlaySound("weaponempty");
+		}
+	}
+
+	[ClientRpc]
+	public void CannotReloadText() 
+	{
+		if (Input.Pressed(InputButton.Reload) && AmmoClip != 0) 
+		{
+			new CannotReload();
+		}	
+	}
+
+	public override void PostCameraSetup( ref CameraSetup camSetup )
+	{
+		base.PostCameraSetup( ref camSetup );
+
+		if ( Aiming )
+		{
+			camSetup.FieldOfView = 35;
 		}
 	}
 

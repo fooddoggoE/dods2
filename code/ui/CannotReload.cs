@@ -15,14 +15,14 @@ public partial class CannotReload : Panel
 	{
 		Instance = this;
 
-		StyleSheet.Load( "/ui/SpawnMenu.scss" );
+		StyleSheet.Load( "/styles/_cannotreload.scss" );
 	}
 
 	public override void Tick()
 	{
 		base.Tick();
 
-		Parent.SetClass( "spawnmenuopen", Input.Down( InputButton.Menu ) );
+		Parent.SetClass( "spawnmenuopen", Input.Pressed( InputButton.Reload ) );
 	}
 
 	public override void OnHotloaded()
