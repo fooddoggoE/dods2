@@ -17666,7 +17666,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Pelvis"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 1.945225
 						point0 = [ 3.890442, 0.0, 0.0 ]
@@ -17675,7 +17675,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Spine"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 1.004576
 						point0 = [ 4.018303, 0.0, 0.0 ]
@@ -17684,7 +17684,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Spine2"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 2.235653
 						point0 = [ 8.942612, 0.0, 0.0 ]
@@ -17693,7 +17693,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Neck1"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 0.898444
 						point0 = [ 3.593777, 0.0, 0.0 ]
@@ -17702,7 +17702,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Head1"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 0.912537
 						point0 = [ 3.650146, 0.0, 0.0 ]
@@ -17711,7 +17711,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Clavicle"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 1.507035
 						point0 = [ 6.028139, 0.0, 0.0 ]
@@ -17720,7 +17720,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_UpperArm"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 2.923146
 						point0 = [ 11.692585, 0.0, 0.0 ]
@@ -17729,7 +17729,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Forearm"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 2.870423
 						point0 = [ 11.481693, 0.0, 0.0 ]
@@ -17738,7 +17738,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Hand"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 0.956362
 						point0 = [ 3.825447, 0.0, 0.0 ]
@@ -17747,7 +17747,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Clavicle"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 1.50704
 						point0 = [ 6.028159, 0.0, 0.0 ]
@@ -17756,7 +17756,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_UpperArm"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 2.923148
 						point0 = [ 11.692593, 0.0, 0.0 ]
@@ -17765,7 +17765,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Forearm"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 2.870427
 						point0 = [ 11.481709, 0.0, 0.0 ]
@@ -17774,7 +17774,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Hand"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 0.985576
 						point0 = [ 3.942303, 0.0, 0.0 ]
@@ -17783,7 +17783,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Thigh"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 4.462047
 						point0 = [ 17.848186, 0.0, 0.0 ]
@@ -17792,7 +17792,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Calf"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 4.131314
 						point0 = [ 16.525257, 0.0, 0.0 ]
@@ -17801,7 +17801,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Foot"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 1.719863
 						point0 = [ 6.879453, 0.0, 0.0 ]
@@ -17810,7 +17810,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Thigh"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 4.46204
 						point0 = [ 17.848162, 0.0, 0.0 ]
@@ -17819,7 +17819,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Calf"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 4.131309
 						point0 = [ 16.525236, 0.0, 0.0 ]
@@ -17828,7 +17828,7 @@
 					{
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Foot"
-						surface_prop = "flesh"
+						surface_prop = "dods2_flesh"
 						collision_prop = "default"
 						radius = 1.71986
 						point0 = [ 6.87944, 0.0, 0.0 ]
