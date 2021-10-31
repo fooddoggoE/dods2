@@ -16974,48 +16974,6 @@
 						take = 0
 						reverse = false
 					},
-					{
-						_class = "AnimFile"
-						name = "Idleface1"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/dod_player_shared_anims/Idleface1.dmx"
-						start_frame = -1
-						end_frame = 60
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "male_09_reference"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "animations/dod_player_shared_anims/male_09_reference.smd"
-						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
 				]
 				default_root_bone_name = ""
 			},
@@ -17929,6 +17887,52 @@
 							m_vTraceScale = [ 1.0, 1.0, 1.0 ]
 						}
 					},
+					{
+						_class = "LookAtChain"
+						name = "LookChain"
+						lookat_chain = 
+						{
+							name = ""
+							bones = 
+							[
+								{
+									name = "Bip01_Head1"
+									weight = 0.6
+								},
+								{
+									name = "Bip01_Neck1"
+									weight = 0.35
+								},
+							]
+						}
+					},
+					{
+						_class = "LookAtChain"
+						name = "AimChain"
+						lookat_chain = 
+						{
+							name = ""
+							bones = 
+							[
+								{
+									name = "Bip01_Spine2"
+									weight = 0.0
+								},
+								{
+									name = "Bip01_Spine1"
+									weight = 0.0
+								},
+								{
+									name = "Bip01_Spine"
+									weight = 0.0
+								},
+								{
+									name = "Bip01_Pelvis"
+									weight = 0.0
+								},
+							]
+						}
+					},
 				]
 			},
 			{
@@ -17937,13 +17941,13 @@
 				[
 					{
 						_class = "HitboxSet"
-						name = "dod"
+						name = "Hitbox"
 						children = 
 						[
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_pelvis"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 2
 								hitbox_mins = [ -7.75, -3.0, -6.6 ]
@@ -17952,7 +17956,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_l_thigh"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 6
 								hitbox_mins = [ 3.5, -3.9, -3.9 ]
@@ -17961,7 +17965,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_l_calf"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 6
 								hitbox_mins = [ 1.52, -3.37, -3.25 ]
@@ -17970,7 +17974,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_l_foot"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 6
 								hitbox_mins = [ -1.0, -1.3, -2.0 ]
@@ -17979,7 +17983,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_l_toe0"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 6
 								hitbox_mins = [ -3.2, -1.45, -2.0 ]
@@ -17988,7 +17992,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_r_thigh"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 7
 								hitbox_mins = [ 3.5, -3.9, -3.1 ]
@@ -17997,7 +18001,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_r_calf"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 7
 								hitbox_mins = [ 1.52, -3.37, -3.25 ]
@@ -18006,7 +18010,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_r_foot"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 7
 								hitbox_mins = [ -1.0, -1.3, -2.0 ]
@@ -18015,7 +18019,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_r_toe0"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 7
 								hitbox_mins = [ -3.2, -1.45, -2.0 ]
@@ -18024,7 +18028,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_spine"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 2
 								hitbox_mins = [ -0.45, -3.0, -7.0 ]
@@ -18033,7 +18037,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_spine1"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 2
 								hitbox_mins = [ -0.9, -3.0, -7.0 ]
@@ -18042,7 +18046,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_spine2"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 2
 								hitbox_mins = [ -0.5, -3.9, -7.5 ]
@@ -18051,7 +18055,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_spine4"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 2
 								hitbox_mins = [ -0.2, -2.8, -7.5 ]
@@ -18060,7 +18064,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_neck1"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 1
 								hitbox_mins = [ 0.5, -3.7, -2.5 ]
@@ -18069,7 +18073,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_head1"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 1
 								hitbox_mins = [ -1.3, -5.15, -3.0 ]
@@ -18078,7 +18082,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_l_upperarm"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 4
 								hitbox_mins = [ -3.0, -2.05, -2.45 ]
@@ -18087,7 +18091,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_l_forearm"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 4
 								hitbox_mins = [ -0.4, -2.0, -2.8 ]
@@ -18096,7 +18100,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_l_hand"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 4
 								hitbox_mins = [ 0.0, -1.65, -1.45 ]
@@ -18105,7 +18109,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_r_upperarm"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 5
 								hitbox_mins = [ -3.0, -2.05, -2.05 ]
@@ -18114,7 +18118,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_r_forearm"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 5
 								hitbox_mins = [ -0.4, -1.9, -1.8 ]
@@ -18123,7 +18127,7 @@
 							{
 								_class = "Hitbox"
 								parent_bone = "bip01_r_hand"
-								surface_property = "flesh"
+								surface_property = "dods2_flesh"
 								translation_only = false
 								group_id = 5
 								hitbox_mins = [ 0.0, -1.65, -2.05 ]

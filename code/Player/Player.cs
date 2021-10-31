@@ -65,6 +65,8 @@ partial class DeathmatchPlayer : Player
 		EnableHideInFirstPerson = true;
 		EnableShadowInFirstPerson = true;
 
+		SetBodyGroup("helmet", 0);
+
 		ClearAmmo();
 
 		SupressPickupNotices = true;
@@ -333,6 +335,7 @@ partial class DeathmatchPlayer : Player
 		if ( info.HitboxIndex == 1 )
 		{
 			info.Damage *= 10.0f;
+			SetBodyGroup("helmet", 1);
 		}
 
 		base.TakeDamage( info );

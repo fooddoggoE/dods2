@@ -10,16 +10,14 @@ public class Vitals : Panel
 	public Vitals()
 	{
 		Health = Add.Label( "100", "health" );
-		// Indicator = Add.Panel( "indicator" );
 	}
 
 	public override void Tick()
 	{
-		if (Local.Pawn is DeathmatchPlayer player) 
-		{
-			var health = player.Health;
+		var player = Local.Pawn;
+		if ( player == null ) return;
 
-			// Indicator.Style.Set("height", $"{percentage * 100}%");
-		}
+		Health.Text = $"{player.Health.CeilToInt()}";
+		Health.SetClass( "danger", player.Health < 40.0f );
 	}
 }

@@ -1,0 +1,44 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		decals = 
+		[
+			{
+				material = resource:"materials/shared/blood1.vmat"
+				depth = [ 8.0, 3.0, 0.0 ]
+				width = [ 4.0, 8.0, 1.0 ]
+				height = [ 4.0, 5.0, 0.0 ]
+				keepaspect = true
+			},
+			{
+				material = resource:"materials/shared/blood2.vmat"
+				depth = [ 8.0, 3.0, 0.0 ]
+				width = [ 4.0, 8.0, 1.0 ]
+				height = [ 4.0, 5.0, 0.0 ]
+				keepaspect = true
+			},
+			{
+				material = resource:"materials/shared/blood3.vmat"
+				depth = [ 8.0, 3.0, 0.0 ]
+				width = [ 4.0, 8.0, 1.0 ]
+				height = [ 4.0, 5.0, 0.0 ]
+				keepaspect = true
+			},
+			{
+				material = resource:"materials/shared/blood4.vmat"
+				depth = [ 8.0, 3.0, 0.0 ]
+				width = [ 4.0, 8.0, 1.0 ]
+				height = [ 4.0, 5.0, 0.0 ]
+				keepaspect = true
+			},
+			{
+				material = resource:"materials/shared/blood5.vmat"
+				depth = [ 8.0, 3.0, 0.0 ]
+				width = [ 4.0, 8.0, 1.0 ]
+				height = [ 4.0, 5.0, 0.0 ]
+				keepaspect = true
+			},
+		]
+	}
+}

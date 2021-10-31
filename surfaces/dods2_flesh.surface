@@ -1,0 +1,36 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	data = 
+	{
+		Base = "default"
+		Friction = 0.6
+		Elasticity = 0.2
+		Density = 900.0
+		Thickness = 0.3
+		Dampening = 10.0
+		BounceThreshold = 40.0
+		ImpactEffects = 
+		{
+			BulletDecal = 
+			[
+				"decals/dods2_blood_decal.decal",
+			]
+			Bullet = 
+			[
+				resource:"particles/hit_blood.vpcf",
+			]
+		}
+		Sounds = 
+		{
+			Bullet = "flesh_impact_bullet"
+			RoughScrape = "flesh_scrape_rough_loop"
+			SmoothScrape = "flesh_scrape_rough_loop"
+			ImpactHard = "flesh_impact_hard"
+			ImpactSoft = "flesh_squishy_impact_hard"
+			FootLaunch = "flesh_impact_hard"
+			FootLand = "flesh_impact_hard"
+			FootLeft = "flesh_impact_hard"
+			FootRight = "flesh_impact_hard"
+		}
+	}
+}
