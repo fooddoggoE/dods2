@@ -79,7 +79,7 @@
 					{
 						_class = "RenderMeshFile"
 						name = "shell_large_bg_studio_lod0"
-						filename = "models/weapons/shell_large_refs/mesh/shell_large_bg_studio_lod0.dmx"
+						filename = "models/weapons/Shells/shell_large_refs/mesh/shell_large_bg_studio_lod0.dmx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 1.0

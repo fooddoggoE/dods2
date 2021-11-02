@@ -1,7 +1,0 @@
-importfilelist
-{
-	"file"	"materials\models\weapons\v_models\garand\v_garand.vmt"
-	"file"	"materials\models\weapons\v_models\hands\v_axis_sleeve.vmt"
-	"file"	"materials\models\weapons\v_models\hands\v_hand.vmt"
-	"file"	"materials\models\weapons\v_models\hands\us_sleeve.vmt"
-}

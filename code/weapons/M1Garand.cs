@@ -13,6 +13,8 @@ partial class Garand : BaseDmWeapon
 	public override float ReloadTime => 1.6f;
 	public override int Bucket => 2;
 
+	public float AimingCounter;
+
     [Net]
     public bool Aiming {get; set;}
 
@@ -65,7 +67,6 @@ partial class Garand : BaseDmWeapon
 		//
 		Rand.SetSeed(Time.Tick);
 		ShootBullet( 0.1f, 1.5f, 15.0f, 3.0f );
-
 	}
 
     public override bool CanReload() 
@@ -98,19 +99,37 @@ partial class Garand : BaseDmWeapon
 			OnReloadFinish();
 		}
 
-		if (Aiming) 
-		{
-			ViewModelEntity?.SetAnimBool("aiming", true);
-		}
-
         if (AmmoClip == 0) 
         {
             ViewModelEntity?.SetAnimBool("empty", true);
         }
 
+		if (AmmoClip != 0) 
+		{
+			ViewModelEntity?.SetAnimBool("empty", false);
+		}
+
 		if (Input.Pressed(InputButton.Attack2)) 
 		{
 			Aiming = !Aiming;
+		}
+
+		if (Input.Pressed(InputButton.Attack2) && AimingCounter <= 1) 
+		{
+			ViewModelEntity?.SetAnimBool("aiming_enter", true);
+			ViewModelEntity?.SetAnimBool("aiming", true);
+
+			AimingCounter++;
+
+			Log.Info(AimingCounter);
+		}
+
+		if (Input.Pressed(InputButton.Attack2) && AimingCounter > 1) 
+		{
+			ViewModelEntity?.SetAnimBool("aiming", false);
+
+			AimingCounter--;
+			AimingCounter--;
 		}
 
 		(Owner as AnimEntity).SetAnimBool("b_aim", Aiming);
@@ -142,7 +161,7 @@ partial class Garand : BaseDmWeapon
 
 	public override void AttackSecondary()
 	{
-		// Grenade lob
+
 	}
 
 	[ClientRpc]
@@ -159,6 +178,14 @@ partial class Garand : BaseDmWeapon
 		}
 
 		CrosshairPanel?.CreateEvent( "fire" );
+	}
+
+	public override void BuildInput( InputBuilder owner ) 
+	{
+		if ( Aiming )
+		{
+			owner.ViewAngles = Angles.Lerp( owner.OriginalViewAngles, owner.ViewAngles, 0.2f );
+		}
 	}
 
 	public override void SimulateAnimator( PawnAnimator anim )

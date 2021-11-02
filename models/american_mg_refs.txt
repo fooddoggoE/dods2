@@ -1,5 +1,0 @@
-importfilelist
-{
-	"file"	"materials\models\player\american\american_body.vmt"
-	"file"	"materials\models\player\american\american_gear.vmt"
-}

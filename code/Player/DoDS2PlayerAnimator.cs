@@ -61,7 +61,7 @@ namespace Sandbox
 			SetParam( "b_noclip", noclip );
 			SetParam( "b_sit", sitting );
 			SetParam( "b_swim", Pawn.WaterLevel.Fraction > 0.5f && !sitting );
-			SetParam("b_sprint", Input.Down(InputButton.Run) && Velocity != 0 && duck != 1);
+			SetParam("b_sprint", Input.Down(InputButton.Run) && Velocity != 0);
 			// SetParam("b_prone", Input.Pressed(InputButton.Undo));
 
 			Vector3 aimPos = Pawn.EyePos + Input.Rotation.Forward * 200;
