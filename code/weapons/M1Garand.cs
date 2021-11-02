@@ -13,10 +13,7 @@ partial class Garand : BaseDmWeapon
 	public override float ReloadTime => 1.6f;
 	public override int Bucket => 2;
 
-	public float AimingCounter;
-
-    [Net]
-    public bool Aiming {get; set;}
+    bool Aiming;
 
 	public override void Spawn()
 	{
@@ -66,7 +63,12 @@ partial class Garand : BaseDmWeapon
 		// Shoot the bullets
 		//
 		Rand.SetSeed(Time.Tick);
-		ShootBullet( 0.1f, 1.5f, 15.0f, 3.0f );
+
+		if (!Aiming)
+			ShootBullet( 0.1f, 1.5f, 15.0f, 3.0f );
+
+		if (Aiming) 
+			ShootBullet(0.025f, 1.5f, 15, 3);
 	}
 
     public override bool CanReload() 
@@ -109,27 +111,40 @@ partial class Garand : BaseDmWeapon
 			ViewModelEntity?.SetAnimBool("empty", false);
 		}
 
-		if (Input.Pressed(InputButton.Attack2)) 
-		{
-			Aiming = !Aiming;
-		}
+		// if (Input.Pressed(InputButton.Attack2)) 
+		// {
+		// 	Aiming = !Aiming;
+		// }
 
-		if (Input.Pressed(InputButton.Attack2) && AimingCounter <= 1) 
+		// if (Input.Pressed(InputButton.Attack2) && AimingCounter <= 1) 
+		// {
+		// 	ViewModelEntity?.SetAnimBool("aiming_enter", true);
+		// 	ViewModelEntity?.SetAnimBool("aiming", true);
+
+		// 	AimingCounter++;
+
+		// 	// Log.Info(AimingCounter);
+		// }
+
+		// if (Input.Pressed(InputButton.Attack2) && AimingCounter > 1) 
+		// {
+		// 	ViewModelEntity?.SetAnimBool("aiming", false);
+
+		// 	AimingCounter--;
+		// 	AimingCounter--;
+		// }
+
+		if (Input.Down(InputButton.Attack2) && !Aiming) 
 		{
+			Aiming = true;
 			ViewModelEntity?.SetAnimBool("aiming_enter", true);
 			ViewModelEntity?.SetAnimBool("aiming", true);
-
-			AimingCounter++;
-
-			Log.Info(AimingCounter);
 		}
 
-		if (Input.Pressed(InputButton.Attack2) && AimingCounter > 1) 
+		if (Input.Released(InputButton.Attack2) && Aiming) 
 		{
+			Aiming = false;
 			ViewModelEntity?.SetAnimBool("aiming", false);
-
-			AimingCounter--;
-			AimingCounter--;
 		}
 
 		(Owner as AnimEntity).SetAnimBool("b_aim", Aiming);
