@@ -101,6 +101,11 @@ partial class Garand : BaseDmWeapon
 			OnReloadFinish();
 		}
 
+		// if (Input.Pressed(InputButton.Flashlight)) 
+		// {
+		// 	PlaySound("us_grenadein");
+		// }
+
         if (AmmoClip == 0) 
         {
             ViewModelEntity?.SetAnimBool("empty", true);
@@ -110,6 +115,9 @@ partial class Garand : BaseDmWeapon
 		{
 			ViewModelEntity?.SetAnimBool("empty", false);
 		}
+
+
+		// Shitty old thing that barely worked, was toggle but difficult to make
 
 		// if (Input.Pressed(InputButton.Attack2)) 
 		// {
@@ -172,11 +180,6 @@ partial class Garand : BaseDmWeapon
 		{
 			camSetup.FieldOfView = 35;
 		}
-	}
-
-	public override void AttackSecondary()
-	{
-
 	}
 
 	[ClientRpc]

@@ -17085,6 +17085,25 @@
 						]
 						hidden_in_tools = false
 					},
+					{
+						_class = "BodyGroup"
+						name = "Weapons"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"",
+								]
+							},
+						]
+						hidden_in_tools = false
+					},
 				]
 			},
 			{
@@ -18150,7 +18169,37 @@
 						weight = 1.0
 						ignore_rotation = false
 					},
+					{
+						_class = "Attachment"
+						name = "Hand_L"
+						parent_bone = "Bip01_L_Hand"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
 				]
+			},
+			{
+				_class = "SpawnConfig"
+				children = 
+				[
+					{
+						_class = "ConfigAttachedModel"
+						model_name = "dods2/models/weapons/m1_garand/w_garand.vmdl"
+						entity_class = ""
+						attachment_type = "attach"
+						attach_point = "Hand_L"
+						use_additional_offset = true
+						relative_origin = [ -8.108086, 0.498017, -10.81478 ]
+						relative_angles = [ -39.120235, 0.09516, 70.941429 ]
+						user_specified_color = false
+						user_specified_materialgroup = false
+						accept_parent_materialdriven_decals = false
+					},
+				]
+				hide_materialgroup_in_tools = false
+				hide_rendercolor_in_tools = false
 			},
 		]
 		model_archetype = ""

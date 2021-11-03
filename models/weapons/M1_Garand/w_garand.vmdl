@@ -36,8 +36,8 @@
 					{
 						_class = "Bone"
 						name = "Bip01_L_Hand"
-						origin = [ 24.348713, 0.0, 3.107248 ]
-						angles = [ 90.0, 180.0, 0.0 ]
+						origin = [ 16.916599, 1.0, 2.95481 ]
+						angles = [ 0.0, 270.0, 270.0 ]
 						do_not_discard = true
 					},
 				]
