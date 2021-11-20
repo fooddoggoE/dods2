@@ -56,7 +56,7 @@ partial class DeathmatchPlayer : Player
 			SetBodyGroup("Classes", 6);
 		}
 
-		Controller = new WalkController();
+		Controller = new DoDS2WalkController();
 		Animator = new DoDS2PlayerAnimator();
 		Camera = new FirstPersonCamera();
 		  
@@ -72,10 +72,11 @@ partial class DeathmatchPlayer : Player
 		SupressPickupNotices = true;
 
 		Inventory.Add(new Garand(), true);
+		Inventory.Add(new Amerk());
 
 		GiveAmmo( AmmoType.Pistol, 100 );
-		GiveAmmo( AmmoType.Buckshot, 8 );
-		GiveAmmo( AmmoType.Crossbow, 4 );
+		// GiveAmmo( AmmoType.Buckshot, 8 );
+		// GiveAmmo( AmmoType.Crossbow, 4 );
 
 		SupressPickupNotices = false;
 		Health = 100;

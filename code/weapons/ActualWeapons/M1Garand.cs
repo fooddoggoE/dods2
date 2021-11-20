@@ -101,11 +101,6 @@ partial class Garand : BaseDmWeapon
 			OnReloadFinish();
 		}
 
-		// if (Input.Pressed(InputButton.Flashlight)) 
-		// {
-		// 	PlaySound("us_grenadein");
-		// }
-
         if (AmmoClip == 0) 
         {
             ViewModelEntity?.SetAnimBool("empty", true);

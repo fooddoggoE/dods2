@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\dods2\\code\\dods2.csproj": {}
+  },
+  "projects": {
+    "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj",
+        "projectName": "base",
+        "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj",
+        "packagesPath": "C:\\Users\\Loke\\.nuget\\packages\\",
+        "outputPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Loke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\dods2\\code\\dods2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\dods2\\code\\dods2.csproj",
+        "projectName": "dods2",
+        "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\dods2\\code\\dods2.csproj",
+        "packagesPath": "C:\\Users\\Loke\\.nuget\\packages\\",
+        "outputPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\dods2\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Loke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj": {
+                "projectPath": "E:\\Steam Spel\\steamapps\\common\\sbox\\addons\\base\\code\\base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -22,6 +22,16 @@
 ]
 
 //
+// Amerk
+//
+@PointClass base(BaseProperties_dods2) = dod_amerk : ""
+[
+	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+
+//
 // Garand
 //
 @PointClass base(BaseProperties_dods2) editormodel( "weapons/m1_garand/w_garand.vmdl" ) = dod_garand : ""
