@@ -16,7 +16,8 @@ KillFeedEntry
 {
 	//background-color: rgba( black, 0.8 );
 	margin-bottom: 5px;
-	color: white;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 	transition: all 0.2s ease-out;
 	opacity: 1;
 	flex-shrink: 0;
@@ -71,7 +72,7 @@ KillFeedEntry
 
 	.message
 	{
-		color: #ccc;
+		color: rgb(0, 0, 0);
 		font-size: 14px;
 		//	background-color: red;
 		flex-grow: 1;

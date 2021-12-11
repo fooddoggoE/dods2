@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dods2</name>
+    </assembly>
+    <members>
+        <member name="T:DoDS2">
+            <summary>
+            This is the heart of the gamemode. It's responsible
+            for creating the player and stuff.
+            </summary>
+        </member>
+        <member name="T:IRespawnableEntity">
+            <summary>
+            Any entities that implement this interface are added as a record and respawned
+            So it should really just be weapons, ammo and healthpacks etc
+            </summary>
+        </member>
+        <member name="T:ItemRespawn.Record">
+            <summary>
+            A record of an entity and its position
+            </summary>
+        </member>
+        <member name="F:ItemRespawn.Records">
+            <summary>
+            a list of entity records
+            </summary>
+        </member>
+        <member name="M:ItemRespawn.Init">
+            <summary>
+            Create a bunch of records from the existing entities. This should be called before
+            any players are spawned, but right after the level is loaded.
+            </summary>
+        </member>
+        <member name="M:ItemRespawn.AddRecordFromEntity(Sandbox.Entity)">
+            <summary>
+            Respawn this entity if it gets deleted (and Taken is called before!)
+            </summary>
+            <param name="ent"></param>
+        </member>
+        <member name="M:ItemRespawn.Taken(Sandbox.Entity)">
+            <summary>
+            Entity has been picked up, or deleted or something.
+            If it was in our records, start a respawn timer
+            </summary>
+        </member>
+        <member name="M:ItemRespawn.RespawnAsync(ItemRespawn.Record)">
+            <summary>
+            Async Respawn timer. Wait 30 seconds, spawn the entity, add a record for it.
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.GetHull">
+            <summary>
+            This is temporary, get the hull size for the player's collision
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.UpdateBBox">
+            <summary>
+            Update the size of the bbox. We should really trigger some shit if this changes.
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.Accelerate(Vector3,System.Single,System.Single,System.Single)">
+            <summary>
+            Add our wish direction and speed onto our velocity
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.ApplyFriction(System.Single)">
+            <summary>
+            Remove ground friction from velocity
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.UpdateGroundEntity(Sandbox.TraceResult)">
+            <summary>
+            We have a new ground entity
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.ClearGroundEntity">
+            <summary>
+            We're no longer on the ground, remove it
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.TraceBBox(Vector3,Vector3,System.Single)">
+            <summary>
+            Traces the current bbox and returns the result.
+            liftFeet will move the start position up by this amount, while keeping the top of the bbox at the same
+            position. This is good when tracing down because you won't be tracing through the ceiling above.
+            </summary>
+        </member>
+        <member name="M:Sandbox.DoDS2WalkController.StayOnGround">
+            <summary>
+            Try to keep a walking player on the ground when running down slopes etc
+            </summary>
+        </member>
+        <member name="T:InventoryBar">
+            <summary>
+            The main inventory panel, top left of the screen.
+            </summary>
+        </member>
+        <member name="M:InventoryBar.ProcessClientInput(Sandbox.InputBuilder)">
+            <summary>
+            IClientInput implementation, calls during the client input build.
+            You can both read and write to input, to affect what happens down the line.
+            </summary>
+        </member>
+        <member name="M:PickupFeed.OnPickup(System.String)">
+            <summary>
+            An RPC which can be called from the server 
+            </summary>
+        </member>
+        <member name="M:PickupFeed.AddEntry(System.String)">
+            <summary>
+            Spawns a label, waits for half a second and then deletes it
+            The :outro style in the scss keeps it alive and fades it out
+            </summary>
+        </member>
+        <member name="M:BaseDmWeapon.ShootBullet(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Shoot a single bullet
+            </summary>
+        </member>
+    </members>
+</doc>

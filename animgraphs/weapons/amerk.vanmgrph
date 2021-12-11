@@ -353,7 +353,7 @@
 										m_bIsFinished = true
 									},
 								]
-								m_blendDuration = 0.2
+								m_blendDuration = 1.0
 								m_destState = 
 								{
 									m_id = 2106775947
@@ -424,7 +424,7 @@
 										m_bIsFinished = true
 									},
 								]
-								m_blendDuration = 0.2
+								m_blendDuration = 1.0
 								m_destState = 
 								{
 									m_id = 2106775947

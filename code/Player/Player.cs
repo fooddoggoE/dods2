@@ -73,6 +73,7 @@ partial class DeathmatchPlayer : Player
 
 		Inventory.Add(new Garand(), true);
 		Inventory.Add(new Amerk());
+		Inventory.Add(new SmokeGrenade());
 
 		GiveAmmo( AmmoType.Pistol, 100 );
 		// GiveAmmo( AmmoType.Buckshot, 8 );
@@ -194,17 +195,17 @@ partial class DeathmatchPlayer : Player
 
 		TickPlayerUse();
 
-		if ( Input.Pressed( InputButton.View ) )
-		{
-			if ( Camera is ThirdPersonCamera )
-			{
-				Camera = new FirstPersonCamera();
-			}
-			else
-			{
-				Camera = new ThirdPersonCamera();
-			}
-		}
+		// if ( Input.Pressed( InputButton.View ) )
+		// {
+		// 	if ( Camera is ThirdPersonCamera )
+		// 	{
+		// 		Camera = new FirstPersonCamera();
+		// 	}
+		// 	else
+		// 	{
+		// 		Camera = new ThirdPersonCamera();
+		// 	}
+		// }
 
 		if ( Input.Pressed( InputButton.Drop ) )
 		{

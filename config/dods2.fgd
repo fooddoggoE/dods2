@@ -18,7 +18,6 @@
 //
 @PointClass base(BaseProperties_dods2) = dods2 : "This is the heart of the gamemode. It's responsible for creating the player and stuff."
 [
-	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
 ]
 
 //
@@ -35,6 +34,16 @@
 // Garand
 //
 @PointClass base(BaseProperties_dods2) editormodel( "weapons/m1_garand/w_garand.vmdl" ) = dod_garand : ""
+[
+	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+
+//
+// SmokeGrenade
+//
+@PointClass base(BaseProperties_dods2) = dod_smokegrenade : ""
 [
 	enable_shadows(boolean) { group = "Rendering" } : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
 

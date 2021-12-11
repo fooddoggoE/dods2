@@ -1,0 +1,14 @@
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\.vs\output\dods2.xml
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\.vs\output\dods2.deps.json
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\.vs\output\dods2.dll
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\.vs\output\ref\dods2.dll
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\.vs\output\dods2.pdb
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.csproj.AssemblyReference.cache
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.AssemblyInfoInputs.cache
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.AssemblyInfo.cs
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.csproj.CoreCompileInputs.cache
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.csproj.CopyComplete
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.dll
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\ref\dods2.dll
+E:\Steam Spel\steamapps\common\sbox\addons\dods2\code\obj\Debug\dods2.pdb

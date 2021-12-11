@@ -59,6 +59,27 @@
 				[
 					{
 						_class = "AnimFile"
+						name = "slash2"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/weapons/Amerk/v_amerk_anims/slash2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
 						name = "draw"
 						children = 
 						[
@@ -86,9 +107,9 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/weapons/Amerk/v_amerk_anims/draw.smd"
+						source_filename = "models/weapons/Amerk/v_amerk_anims/draw.dmx"
 						start_frame = -1
-						end_frame = -1
+						end_frame = 30
 						framerate = -1.0
 						take = 0
 						reverse = false
@@ -107,9 +128,9 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/weapons/Amerk/v_amerk_anims/idle.smd"
+						source_filename = "models/weapons/Amerk/v_amerk_anims/idle.dmx"
 						start_frame = -1
-						end_frame = -1
+						end_frame = 5
 						framerate = -1.0
 						take = 0
 						reverse = false
@@ -143,9 +164,9 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/weapons/Amerk/v_amerk_anims/knifebutt.smd"
+						source_filename = "models/weapons/Amerk/v_amerk_anims/knifebutt.dmx"
 						start_frame = -1
-						end_frame = -1
+						end_frame = 30
 						framerate = -1.0
 						take = 0
 						reverse = false
@@ -179,9 +200,9 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/weapons/Amerk/v_amerk_anims/punch1.smd"
+						source_filename = "models/weapons/Amerk/v_amerk_anims/punch1.dmx"
 						start_frame = -1
-						end_frame = -1
+						end_frame = 30
 						framerate = -1.0
 						take = 0
 						reverse = false
@@ -215,30 +236,9 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/weapons/Amerk/v_amerk_anims/punch2.smd"
+						source_filename = "models/weapons/Amerk/v_amerk_anims/punch2.dmx"
 						start_frame = -1
-						end_frame = -1
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "slash2"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/weapons/Amerk/v_amerk_anims/slash2.smd"
-						start_frame = -1
-						end_frame = -1
+						end_frame = 30
 						framerate = -1.0
 						take = 0
 						reverse = false

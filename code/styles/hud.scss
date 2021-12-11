@@ -7,6 +7,8 @@
 @import "_pickupfeed.scss";
 @import "_scoreboard.scss";
 @import "_cannotreload.scss";
+@import "/ui/CommandMenu.scss";
+@import "/ui/NoReloadPopup.scss";
 
 rootpanel
 {
@@ -64,10 +66,10 @@ ammo
 	}
 }
 
-cannotreload 
-{
-	position: absolute;
-}
+// cannotreload 
+// {
+// 	position: absolute;
+// }
 
 .dm_pistol .icon
 {
@@ -91,5 +93,5 @@ cannotreload
 
 .dod_garand .icon 
 {
-	background-image: url( /ui/weapons/dm_crossbow.png );
+	background-image: url( /ui/weapons/m1garand.png );
 }

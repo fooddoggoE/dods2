@@ -1,0 +1,76 @@
+CommandMenu {
+    width: 400px;
+    pointer-events: none;
+    transition: all 0.25s ease-out;
+    position: absolute;
+    font-family: poppins;
+    height: 10%;
+    width: 10%;
+    opacity: 1;
+    margin: auto;
+    background-color: #424242;
+    flex-direction: column;
+    overflow: hidden;
+    left: -500px;
+    top: 500px;
+    z-index: 1000;
+    border-radius: 4px;
+
+    .header {
+        padding: 14px 20px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #292929;
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 2px 2px 0 black;
+        position: relative;
+    }
+
+    &.open {
+        pointer-events: all;
+        height: 50%;
+        width: 15%;
+        border-radius: 4px;
+        left: 50;
+        top: 300;
+    }
+
+    CommandMenuButtons {
+        height: 100%;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        display: grid;
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            font-family: Poppins;
+            font-size: 22px;
+            color: #fff;
+            background-color: #505050;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #919191;
+            cursor: pointer;
+        }
+
+        .button:active {
+            background-color: #bbbbbb;
+        }
+
+        .section {
+            color: #4e4e4e;
+            font-family: Poppins;
+            margin-bottom: 10px;
+        }
+    }
+}
