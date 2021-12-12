@@ -6,8 +6,9 @@ namespace Sandbox
 	{
 		TimeSince TimeSinceFootShuffle = 60;
 
-
 		float duck;
+
+		float prone;
 
 		void DoWalk()
 		{
@@ -82,7 +83,11 @@ namespace Sandbox
 			if ( HasTag( "ducked" ) ) duck = duck.LerpTo( 1.0f, Time.Delta * 10.0f );
 			else duck = duck.LerpTo( 0.0f, Time.Delta * 5.0f );
 
+			if ( HasTag( "proned" ) ) prone = prone.LerpTo( 1.0f, Time.Delta * 10.0f );
+			else prone = prone.LerpTo( 0.0f, Time.Delta * 5.0f );
+
 			SetParam( "duck", duck );
+			SetParam("prone", prone);
 
 			if ( Pawn.ActiveChild is BaseCarriable carry )
 			{
@@ -106,6 +111,7 @@ namespace Sandbox
 			float turnSpeed = 0.01f;
 			if ( HasTag( "ducked" ) ) turnSpeed = 0.1f;
 
+			if ( HasTag( "proned" ) ) turnSpeed = 0.5f;
 			//
 			// If we're moving, rotate to our ideal rotation
 			//

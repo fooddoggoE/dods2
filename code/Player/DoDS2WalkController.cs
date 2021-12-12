@@ -29,12 +29,14 @@ namespace Sandbox
 
 		public Duck Duck;
 		public Unstuck Unstuck;
+		public DoDS2Prone DoDS2Prone;
 
 
 		public DoDS2WalkController()
 		{
 			Duck = new Duck( this );
 			Unstuck = new Unstuck( this );
+			DoDS2Prone = new DoDS2Prone(this);
 		}
 
 		/// <summary>
@@ -77,6 +79,7 @@ namespace Sandbox
 			var maxs = new Vector3( +girth, +girth, BodyHeight ) * Pawn.Scale;
 
 			Duck.UpdateBBox( ref mins, ref maxs, Pawn.Scale );
+			DoDS2Prone.UpdateBBox(ref mins, ref maxs, Pawn.Scale);
 
 			SetBBox( mins, maxs );
 		}
@@ -189,6 +192,7 @@ namespace Sandbox
 			WishVelocity *= GetWishSpeed();
 
 			Duck.PreTick();
+			DoDS2Prone.PreTick();
 
 			bool bStayOnGround = false;
 			if ( Swimming )
@@ -251,7 +255,7 @@ namespace Sandbox
 
 		public virtual float GetWishSpeed()
 		{
-			var ws = Duck.GetWishSpeed();
+			var ws = DoDS2Prone.GetWishSpeed();
 			if ( ws >= 0 ) return ws;
 
 			if ( Input.Down( InputButton.Run ) ) return SprintSpeed;
@@ -478,6 +482,8 @@ namespace Sandbox
 			if ( Duck.IsActive )
 				flMul *= 0.8f;
 
+			if (DoDS2Prone.IsActive)
+				flMul *= 0.4f;
 			Velocity = Velocity.WithZ( startz + flMul * flGroundFactor );
 
 			Velocity -= new Vector3( 0, 0, Gravity * 0.5f ) * Time.Delta;

@@ -9,6 +9,21 @@ using System.Linq;
 [Library( "dods2", Title = "DoDS2" )]
 partial class DoDS2 : Game
 {
+	[ServerCmd("switchview")]
+	public static void SwitchView()
+	{
+		if ( ConsoleSystem.Caller.Pawn is not DeathmatchPlayer p ) return;
+
+		if ( p.Camera is not FirstPersonCamera )
+		{
+			p.Camera = new FirstPersonCamera();
+		}
+		else
+		{
+			p.Camera = new ThirdPersonCamera();
+		}
+	}
+
 	public DoDS2()
 	{
 		//

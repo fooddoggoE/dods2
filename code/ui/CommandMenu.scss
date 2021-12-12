@@ -1,7 +1,7 @@
 CommandMenu {
     width: 400px;
     pointer-events: none;
-    transition: all 0.25s ease-out;
+    transition: all 0.4s ease-out;
     position: absolute;
     font-family: poppins;
     height: 10%;
@@ -23,6 +23,7 @@ CommandMenu {
         background-color: #292929;
         color: #ffffff;
         font-family: Poppins;
+        font-weight: 500;
         font-size: 20px;
         text-align: center;
         text-shadow: 2px 2px 0 black;
@@ -53,6 +54,7 @@ CommandMenu {
             font-size: 22px;
             color: #fff;
             background-color: #505050;
+            transition: all 0.25s ease-out;
             border-radius: 3px;
             margin-bottom: 10px;
             font-size: 16px;
@@ -60,15 +62,16 @@ CommandMenu {
 
         .button:hover {
             background-color: #919191;
+            text-shadow: 3.5px 3.5px 2px black;
             cursor: pointer;
         }
 
         .button:active {
-            background-color: #bbbbbb;
+            background-color: #cecece;
         }
 
         .section {
-            color: #4e4e4e;
+            color: #929292;
             font-family: Poppins;
             margin-bottom: 10px;
         }

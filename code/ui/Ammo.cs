@@ -1,5 +1,4 @@
-﻿
-using Sandbox;
+﻿using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
 
@@ -22,8 +21,11 @@ public class Ammo : Panel
 		var weapon = player.ActiveChild as BaseDmWeapon;
 		SetClass( "active", weapon != null );
 
-		if ( weapon == null ) return;
-
+		if ( weapon == null )
+		{
+			Weapon.Text = "";
+			return;
+		}
 		Weapon.Text = $"{weapon.AmmoClip}";
 
 		var inv = weapon.AvailableAmmo();

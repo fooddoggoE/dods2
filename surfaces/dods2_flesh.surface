@@ -2,7 +2,6 @@
 {
 	data = 
 	{
-		Base = "default"
 		Friction = 0.6
 		Elasticity = 0.2
 		Density = 900.0
@@ -32,5 +31,7 @@
 			FootLeft = "flesh_impact_hard"
 			FootRight = "flesh_impact_hard"
 		}
+		basesurface = ""
+		description = ""
 	}
 }
