@@ -23,7 +23,7 @@
 							},
 							{
 								from = "v_hand.vmat"
-								to = "dods2/materials/weapons/v_hand.vmat"
+								to = "materials/weapons/v_hand.vmat"
 							},
 						]
 						use_global_default = false
