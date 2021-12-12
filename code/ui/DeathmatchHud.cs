@@ -26,10 +26,9 @@ public partial class DeathmatchHud : HudEntity<RootPanel>
 		RootPanel.AddChild<PickupFeed>();
 		
 		RootPanel.AddChild<CannotReload>();
-		RootPanel.AddChild<NoReloadPopup>();
 
 		RootPanel.AddChild<ChatBox>();
-		RootPanel.AddChild<KillFeed>();
+		RootPanel.AddChild<KillFeedCustom>();
 		RootPanel.AddChild<Scoreboard>();
 		RootPanel.AddChild<VoiceList>();
 		RootPanel.AddChild<CommandMenu>();

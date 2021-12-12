@@ -3,12 +3,12 @@
 @import "_damageindicator.scss";
 @import "_hitindicator.scss";
 @import "_inventory.scss";
-@import "_killfeed.scss";
+@import "/ui/KillFeedCustom.scss";
 @import "_pickupfeed.scss";
 @import "_scoreboard.scss";
 @import "_cannotreload.scss";
 @import "/ui/CommandMenu.scss";
-@import "/ui/NoReloadPopup.scss";
+// @import "/ui/NoReloadPopup.scss";
 
 rootpanel
 {
@@ -71,27 +71,12 @@ ammo
 // 	position: absolute;
 // }
 
-.dm_pistol .icon
-{
-	background-image: url( /ui/weapons/dm_pistol.png );
-}
-
-.dm_shotgun .icon
-{
-	background-image: url( /ui/weapons/dm_shotgun.png );
-}
-
-.dm_smg .icon
-{
-	background-image: url( /ui/weapons/dm_smg.png );
-}
-
-.dm_crossbow .icon, .crossbow_bolt .icon
-{
-	background-image: url( /ui/weapons/dm_crossbow.png );
-}
-
 .dod_garand .icon 
 {
 	background-image: url( /ui/weapons/m1garand.png );
+}
+
+.dod_amerk .icon
+{
+	background-image: url(/ui/weapons/amerk.png);
 }
