@@ -1,3 +1,25 @@
 {
-	"sharedassets": "*.*"
+  "Title": "Day of Defeat: Source 2",
+  "Type": "game",
+  "Org": "whale",
+  "Ident": "dods2",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": [
+    "/ui/*"
+  ],
+  "HasCode": true,
+  "CodePath": "code",
+  "RootNamespace": "DOD",
+  "Metadata": {
+    "MapList": [],
+    "PerMapRanking": false,
+    "LeaderboardType": 0,
+    "RankType": 0,
+    "MapSelect": 2,
+    "GameNetworkType": 0,
+    "MaxPlayers": 32,
+    "MinPlayers": 0
+  }
 }
