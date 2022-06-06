@@ -31,7 +31,7 @@
 							},
 							{
 								from = "mouth.vmat"
-								to = "models/citizen_clothes/beards/beard_trucker.ginger.vmat"
+								to = "materials/erdim_cylmap_us.vmat"
 							},
 						]
 						use_global_default = false
@@ -17696,7 +17696,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Pelvis"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 1.945225
 						point0 = [ 3.890442, 0.0, 0.0 ]
 						point1 = [ -3.890457, 0.0, 0.0 ]
@@ -17705,7 +17708,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Spine"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 1.004576
 						point0 = [ 4.018303, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17714,7 +17720,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Spine2"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 2.235653
 						point0 = [ 8.942612, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17723,7 +17732,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Neck1"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 0.898444
 						point0 = [ 3.593777, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17732,7 +17744,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_Head1"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 0.912537
 						point0 = [ 3.650146, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17741,7 +17756,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Clavicle"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 1.507035
 						point0 = [ 6.028139, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17750,7 +17768,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_UpperArm"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 2.923146
 						point0 = [ 11.692585, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17759,7 +17780,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Forearm"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 2.870423
 						point0 = [ 11.481693, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17768,7 +17792,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Hand"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 0.956362
 						point0 = [ 3.825447, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17777,7 +17804,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Clavicle"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 1.50704
 						point0 = [ 6.028159, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17786,7 +17816,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_UpperArm"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 2.923148
 						point0 = [ 11.692593, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17795,7 +17828,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Forearm"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 2.870427
 						point0 = [ 11.481709, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17804,7 +17840,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Hand"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 0.985576
 						point0 = [ 3.942303, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17813,7 +17852,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Thigh"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 4.462047
 						point0 = [ 17.848186, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17822,7 +17864,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Calf"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 4.131314
 						point0 = [ 16.525257, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17831,7 +17876,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_L_Foot"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 1.719863
 						point0 = [ 6.879453, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17840,7 +17888,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Thigh"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 4.46204
 						point0 = [ 17.848162, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17849,7 +17900,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Calf"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 4.131309
 						point0 = [ 16.525236, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -17858,7 +17912,10 @@
 						_class = "PhysicsShapeCapsule"
 						parent_bone = "Bip01_R_Foot"
 						surface_prop = "dods2_flesh"
-						collision_prop = "default"
+						collision_group = ""
+						collision_interact_as = ""
+						collision_interact_with = ""
+						collision_interact_exclude = ""
 						radius = 1.71986
 						point0 = [ 6.87944, 0.0, 0.0 ]
 						point1 = [ 0.0, 0.0, 0.0 ]
@@ -18197,23 +18254,13 @@
 					{
 						_class = "ConfigAttachedModel"
 						model_name = "dods2/models/weapons/m1_garand/w_garand.vmdl"
-						entity_class = ""
-						attachment_type = "attach"
-						attach_point = "Hand_L"
-						use_additional_offset = true
-						relative_origin = [ -8.108086, 0.498017, -10.81478 ]
-						relative_angles = [ -39.120235, 0.09516, 70.941429 ]
-						user_specified_color = false
-						user_specified_materialgroup = false
-						accept_parent_materialdriven_decals = false
 					},
 				]
-				hide_materialgroup_in_tools = false
-				hide_rendercolor_in_tools = false
 			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""
 		anim_graph_name = "animgraphs/dodpm.vanmgrph"
+		base_model_name = ""
 	}
 }

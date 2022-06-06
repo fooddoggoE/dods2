@@ -31,14 +31,13 @@ Layer0
 	//---- Lookup Textures ----
 	g_vAmbientNormalSoftness "[1.000000 0.301961 0.000000 0.000000]"
 	TextureDiffuseFalloff "materials/default/default_skin_diffusewarp.tga"
-	TextureShadowFalloff "materials/default/default_skin_shadowwarp.tga"
 
 	//---- Normal ----
 	g_flDiffuseNormalBlur "0.500"
 	TextureNormal "materials/default/default_normal.tga"
 
 	//---- Roughness ----
-	TextureRoughness "[1.000000 1.000000 1.000000 0.000000]"
+	TextureRoughness "[0.834000 0.834000 0.834000 0.000000]"
 
 	//---- Specular ----
 	g_flSecondSpecularLobeGlossiness "0.500"
@@ -51,5 +50,5 @@ Layer0
 	//---- Transmission ----
 	g_flTransmissionFalloff "0.800"
 	g_vTransmissionColor "[0.749020 0.231373 0.011765 0.000000]"
-	TextureTransmissiveMask "[0.022000 0.022000 0.022000 0.000000]"
+	TextureTransmissiveMask "[0.001000 0.001000 0.001000 0.000000]"
 }
